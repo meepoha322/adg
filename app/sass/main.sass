@@ -233,4 +233,72 @@ b, strong
 		margin-top: 73px
 		padding-top: 18px
 
+
+.vertical-alignment-helper
+	display: table
+	height: 100%
+	width: 100%
+	pointer-events: none
+
+.vertical-align-center
+	display: table-cell
+	vertical-align: middle
+	pointer-events: none
+
+.modal-content
+	width: inherit
+	max-width: inherit /* For Bootstrap 4 - to avoid the modal window stretching full width */
+	height: inherit
+	/* To center horizontally */
+	margin: 0 auto
+	pointer-events: all
+
+
+.modal
+	&-backdrop
+		background-color: #23292e
+		&.in
+			opacity: 0.9
+	&-title
+		font-weight: bold
+		text-align: center
+		font-size: 3em
+	&-header
+		padding: 55px 50px
+		padding-bottom: 10px
+		border-bottom: none
+	&-description
+		font-size: 1.25em
+		text-align: center
+	&-body
+		padding: 70px
+		padding-top: 0
+
+	&-content
+		border-radius: 0
+		background-color: $modal-bg
+
+	&__form
+		margin-top: 25px
+	&-input
+		&__input
+			border: 1px solid transparent
+			padding: 25px 45px
+			border-radius: 50px
+			width: 100%
+			margin-bottom: 28px
+			&:last-child
+				margin-bottom: 0
+
+	&__close
+		width: 100px
+		height: 100px
+		background-color: $accent !important
+		color: #fff
+		position: relative
+		right: -100px
+		top: 0
+		opacity: 1
+		font-size: 45px
+
 @import "media" // Always at the end

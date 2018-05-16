@@ -2,5 +2,10 @@
 .icon-download-alt:before { content: '\e800'; } /* '' */
 .icon-key:before { content: '\e801'; } /* '' */
 .icon-play:before { content: '\e802'; } /* '' */
+.icon-mobile:before { content: '\e803'; } /* '' */
+.icon-phone:before { content: '\e804'; } /* '' */
+.icon-user:before { content: '\e805'; } /* '' */
+.icon-mail:before { content: '\e806'; } /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-rouble:before { content: '\f158'; } /* '' */
 .icon-doc-text-inv:before { content: '\f15c'; } /* '' */
