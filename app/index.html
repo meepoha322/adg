@@ -162,7 +162,7 @@
 					</div>
 					<div class="modal-body">
 						<div class="modal-description">и мы свяжемся с вами в течение 15 минут</div>
-						<form class="modal__form">
+						<form class="modal__form" id="form_call">
 							<div class="modal__field">
 								<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
 								<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
@@ -207,7 +207,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="modal-description" style="text-align: left;">чтобы получить презентацию</div>
-								<form class="modal__form">
+								<form class="modal__form" id="form_pres">
 									<div class="modal__field">
 										<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
 										<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
@@ -236,7 +236,7 @@
 	</div>
 
 
-	<!-- Present -->
+	<!-- Price -->
 	<div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="priceModalLabel" aria-hidden="true">
 		<div class="vertical-alignment-helper">
 			<div class="modal-dialog vertical-align-center">
@@ -258,7 +258,7 @@
 							</div>
 							<div class="modal-body">
 								<div class="modal-description" style="text-align: left;">чтобы получить прайс</div>
-								<form class="modal__form">
+								<form class="modal__form" id="form_price">
 									<div class="modal__field">
 										<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
 										<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
@@ -324,6 +324,12 @@
 
 	<script src="js/scripts.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+
+	<!--<script src="js/formvalidation/formValidation.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>-->
 
 </body>
 </html>
