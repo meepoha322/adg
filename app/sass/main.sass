@@ -63,7 +63,7 @@ b, strong
 			display: inline-block
 			color: #fff
 			font-size: 14px
-			margin-left: 50px
+			//margin-left: 50px
 			vertical-align: middle
 			line-height: 1.3
 			
@@ -218,6 +218,7 @@ b, strong
 				color: $accent
 				text-align: center
 				margin-left: 25px
+				margin-top: -2px
 				&:before
 					line-height: 28px
 
@@ -277,28 +278,150 @@ b, strong
 	&-content
 		border-radius: 0
 		background-color: $modal-bg
-
+		&.is-big
+			width: 60%
 	&__form
 		margin-top: 25px
 	&-input
 		&__input
 			border: 1px solid transparent
-			padding: 25px 45px
+			padding: 25px 50px
 			border-radius: 50px
 			width: 100%
 			margin-bottom: 28px
+			position: relative
+
+			&:focus
+				box-shadow: 1px 7px 24px 0px #dcdcdc
+
 			&:last-child
 				margin-bottom: 0
+
+	&__field
+		position: relative
+
+	&__thanks
+		text-align: center
+		margin: 20px 0
+
+	&__icon
+		position: absolute
+		top: 24%
+		height: 30px
+		width: 30px
+		right: 30px
+		background: #f1f3f4
+		border-radius: 50%
+		color: #fff
+		text-align: center
+		line-height: 27px
+		&-user
+			font-size: 18px
+		&-phone
+			font-size: 20px
+			line-height: 31px
+		&-email
+			font-size: 20px
+			line-height: 30px
 
 	&__close
 		width: 100px
 		height: 100px
 		background-color: $accent !important
 		color: #fff
-		position: relative
+		position: absolute
 		right: -100px
 		top: 0
 		opacity: 1
 		font-size: 45px
+
+	&__img-magazine
+		position: relative
+		left: -49px
+		top: -22px
+		max-width: 130%
+	&__img-mocup
+		position: relative
+		top: 10%
+		left: -47px
+		max-width: 130%
+	&-sides
+		&:after
+			content: ''
+			display: block
+			clear: both
+	&-rigthside
+		float: right
+		width: 50%
+	&-leftside
+		background-color: #fff
+		float: left
+		width: 50%
+		position: absolute
+		height: 100%
+
+	&__submit
+		border: 1px solid transparent
+		padding: 25px 50px
+		-webkit-border-radius: 50px
+		border-radius: 50px
+		width: 100%
+		margin-bottom: 28px
+		text-align: left
+		background-color: $accent
+		color: #fff
+		position: relative
+		box-shadow: -2px 9px 24px -7px $accent
+		transition: box-shadow .25s
+
+		&.active, &.focus
+			outline: none
+		&:hover
+			box-shadow: 1px 7px 41px 7px $accent
+
+		&:before
+			content: ''
+			height: 30px
+			width: 30px
+			border-radius: 50%
+			background-color: #fff
+			position: absolute
+			right: 30px
+
+		&.is-callback
+			&:after
+				content: '\e803'
+				font-family: "icon"
+				font-style: normal
+				font-weight: normal
+				speak: none
+				display: inline-block
+				text-decoration: inherit
+				width: 1em
+				margin-right: .2em
+				text-align: center
+				color: $accent
+				position: absolute
+				right: 32.5px
+				top: 26px
+				font-size: 1.1em
+
+		&.is-present
+			&:after
+				content: '\f15c'
+				font-family: "icon"
+				font-style: normal
+				font-weight: normal
+				speak: none
+				display: inline-block
+				text-decoration: inherit
+				width: 1em
+				margin-right: .2em
+				text-align: center
+				color: $accent
+				position: absolute
+				right: 32.5px
+				top: 26px
+				font-size: 1.1em
 
 @import "media" // Always at the end

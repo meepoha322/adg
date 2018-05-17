@@ -8,18 +8,93 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .header__logo-title
+    margin-top: 25px
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .header__carousel-title
+    font-size: 2em
+  .header__carousel-text
+    font-size: 1.13em
+  .modal__close
+    right: 0
+    width: 50px
+    height: 50px
+
+  .modal-header
+    padding: 55px 20px
+    padding-bottom: 10px
+
+  .modal-title
+    font-size: 2em
+
+  .modal-body
+    padding: 50px 20px
+    padding-top: 0px
+
+  .modal-content.is-big
+    width: inherit
 
 // ≥576px
 +media-breakpoint-down(xs)
+  .header__carousel-btn
+    display: inline-block
+    margin-bottom: 55px
+  .header__button
+    padding: 8px 15px
+    font-size: 14px
+  .header__links
+    margin-top: 25px
+    text-align: center
+  .header__promo
+    margin-top: 30px
+  .header__carousel-play-btn
+    display: none
+  .header__carousel-buttons-footer
+    margin: 20px 0
+  .header__carousel-chekout-btn
+    display: block
+    width: 100%
+  .header__carousel-chekout-btn
+    display: block
+    width: 100%
+    position: relative
 
+  .header__carousel-chekout-btn .inner-key
+    //position: absolute
+    //right: 35px
+    float: right
+
+
+@media (max-width: 1400px)
+  .modal-leftside
+    width: 35%
+  .modal-rigthside
+    width: 65%
+
+@media (max-width: 1080px)
+  .modal-leftside
+    display: none
+  .modal-rigthside
+    width: 100%
+
+@media (max-width: 382px)
+  .header__button
+    padding: 8px 15px
+    font-size: 14px
+  .header__carousel-chekout-btn .inner-key
+    display: none
+  .header__carousel-chekout-btn
+    text-align: center
+    padding: 15px 20px
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 +media-breakpoint-up(sm)
+
 
 // ≤768px
 +media-breakpoint-up(md)

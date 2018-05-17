@@ -38,16 +38,23 @@
 				<div class="header__top">
 					<div class="row align-items-center">
 
-						<div class="col-6">
+						<div class="col-12 col-md-6 col-sm-6 col-lg-6">
+
 							<div class="header__logo">
-								<a href="#" title="Готовые апартаменты в Ayu-Dag Resort на берегу черного моря" class="header__logo-img">
+								<div class="row align-items-center header__row">
+								<div class="col-lg-4 col-md-12">
+									<a href="#" title="Готовые апартаменты в Ayu-Dag Resort на берегу черного моря" class="header__logo-img">
 									<img src="img/logo.jpg" alt="Готовые апартаменты в Ayu-Dag Resort на берегу черного моря">
 								</a>
+								</div>
+								<div class="col-lg-8 col-md-12">
 								<div class="header__logo-title">Готовые апартаменты в Ayu-Dag Resort<br/>на берегу Черного моря</div>
+								</div>
+								</div>
 							</div>
 						</div>
 
-						<div class="col-6 header__links">
+						<div class="col-12 col-md-6 col-sm-6 col-lg-6 header__links">
 							<a href="tel:+7(000) 000-00-00" class="header__phone">+7 (000) 000-00-00</a>
 							<a href="#" class="header__button" id="showCallback">Заказать звонок</a>
 						</div>
@@ -61,15 +68,15 @@
 							<div class="owl-carousel header__carousel owl-theme">
 								<div class="header__carousel-item">
 									<div class="row justify-content-sm-center">
-										<div class="col-8">
+										<div class="col-lg-8 col-md-12">
 											<div class="header__carousel-title">Купите апартаменты в отеле премиум-класса и получите жилье на берегу моря, </div>
 											<div class="header__carousel-text">в котором вы сможете жить или сдавать его по хорошей цене</div>
 											<div class="header__carousel-buttons">
-												<a href="#" class="header__carousel-price-btn header__carousel-btn">
+												<a href="#" class="header__carousel-price-btn priceModal header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-download-alt"></i></span>
 													Скачать полный прайс
 												</a>
-												<a href="#" class="header__carousel-pres-btn header__carousel-btn">
+												<a href="#" class="header__carousel-pres-btn pressBtnJs header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-doc-text"></i></span>
 													Скачать презентацию
 												</a>
@@ -84,15 +91,15 @@
 								</div>
 								<div class="header__carousel-item">
 									<div class="row justify-content-sm-center">
-										<div class="col-8">
+										<div class="col-lg-8 col-md-12">
 											<div class="header__carousel-title">Купите апартаменты в отеле премиум-класса и получите жилье на берегу моря, </div>
 											<div class="header__carousel-text">в котором вы сможете жить или сдавать его по хорошей цене</div>
 											<div class="header__carousel-buttons">
-												<a href="#" class="header__carousel-price-btn header__carousel-btn">
+												<a href="#" class="header__carousel-price-btn priceModal header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-download-alt"></i></span>
 													Скачать полный прайс
 												</a>
-												<a href="#" class="header__carousel-pres-btn header__carousel-btn">
+												<a href="#" class="header__carousel-pres-btn pressBtnJs header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-doc-text"></i></span>
 													Скачать презентацию
 												</a>
@@ -107,15 +114,15 @@
 								</div>
 								<div class="header__carousel-item">
 									<div class="row justify-content-sm-center">
-										<div class="col-8">
+										<div class="col-lg-8 col-md-12">
 											<div class="header__carousel-title">Купите апартаменты в отеле премиум-класса и получите жилье на берегу моря, </div>
 											<div class="header__carousel-text">в котором вы сможете жить или сдавать его по хорошей цене</div>
 											<div class="header__carousel-buttons">
-												<a href="#" class="header__carousel-price-btn header__carousel-btn">
+												<a href="#" class="header__carousel-price-btn priceModal header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-download-alt"></i></span>
 													Скачать полный прайс
 												</a>
-												<a href="#" class="header__carousel-pres-btn header__carousel-btn">
+												<a href="#" class="header__carousel-pres-btn pressBtnJs header__carousel-btn">
 													<span class="header__carousel-btn-icon"><i class="demo-icon icon-doc-text"></i></span>
 													Скачать презентацию
 												</a>
@@ -141,7 +148,6 @@
 	<!-- modals -->
 
 	<!-- call back -->
-	<!-- Modal -->
 	<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="vertical-alignment-helper">
 			<div class="modal-dialog vertical-align-center">
@@ -157,15 +163,159 @@
 					<div class="modal-body">
 						<div class="modal-description">и мы свяжемся с вами в течение 15 минут</div>
 						<form class="modal__form">
-							<input type="text" class="modal-input__input" name="name" title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
-							<input type="text" class="modal-input__input phone" name="phone" title="Ваш телефон" placeholder="Введите ваш телефон" data-title="Телефон">
-							<button type="submit" class="modal__submit">Оставить заявку</button>
+							<div class="modal__field">
+								<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
+								<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
+							</div>
+							<div class="modal__field">
+								<input type="text" class="modal-input__input phone" name="phone" title="Ваш телефон" placeholder="Введите ваш телефон" data-title="Телефон">
+								<i class="demo-icon icon-phone modal__icon-phone modal__icon"></i>
+							</div>
+							<button type="submit" class="modal__submit is-callback">Оставить заявку</button>
 						</form>
 					</div>
 					<!--<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						<button type="button" class="btn btn-primary">Save changes</button>
 					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Present -->
+	<div class="modal fade" id="presentModal" tabindex="-1" role="dialog" aria-labelledby="presentModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content is-big">
+					<button type="button" class="close modal__close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+
+					</button>
+
+
+						<div class="modal-sides">
+						<div class="modal-leftside">
+							<img src="img/magazine_moc.png" class="modal__img-magazine" alt="">
+						</div>
+						<div class="modal-rigthside">
+							<div class="modal-header">
+
+								<h4 class="modal-title text-left" id="presentModalLabel" style="text-align: left">Оставьте заявку</h4>
+
+							</div>
+							<div class="modal-body">
+								<div class="modal-description" style="text-align: left;">чтобы получить презентацию</div>
+								<form class="modal__form">
+									<div class="modal__field">
+										<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
+										<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
+									</div>
+									<div class="modal__field">
+										<input type="text" class="modal-input__input phone" name="phone" title="Ваш телефон" placeholder="Введите ваш телефон" data-title="Телефон">
+										<i class="demo-icon icon-phone modal__icon-phone modal__icon"></i>
+									</div>
+									<div class="modal__field">
+										<input type="email" class="modal-input__input email" name="email" title="Ваш e-mail" placeholder="Введите ваш email" data-title="E-Mail">
+										<i class="demo-icon icon-mail modal__icon-email modal__icon"></i>
+									</div>
+									<button type="submit" class="modal__submit is-present">Получить презентацию</button>
+								</form>
+							</div>
+						</div>
+							<!--<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>-->
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Present -->
+	<div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="priceModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content is-big">
+					<button type="button" class="close modal__close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+
+					</button>
+
+
+					<div class="modal-sides">
+						<div class="modal-leftside">
+							<img src="img/mockup.png" class="modal__img-mocup" alt="">
+						</div>
+						<div class="modal-rigthside">
+							<div class="modal-header">
+
+								<h4 class="modal-title text-left" id="priceModalLabel" style="text-align: left">Оставьте заявку</h4>
+
+							</div>
+							<div class="modal-body">
+								<div class="modal-description" style="text-align: left;">чтобы получить прайс</div>
+								<form class="modal__form">
+									<div class="modal__field">
+										<input type="text" class="modal-input__input" name="name"  title="Ваше имя" placeholder="Введите ваше имя" data-title="Имя">
+										<i class="demo-icon icon-user modal__icon-user modal__icon"></i>
+									</div>
+									<div class="modal__field">
+										<input type="text" class="modal-input__input phone" name="phone" title="Ваш телефон" placeholder="Введите ваш телефон" data-title="Телефон">
+										<i class="demo-icon icon-phone modal__icon-phone modal__icon"></i>
+									</div>
+									<div class="modal__field">
+										<input type="email" class="modal-input__input email" name="email" title="Ваш e-mail" placeholder="Введите ваш email" data-title="E-Mail">
+										<i class="demo-icon icon-mail modal__icon-email modal__icon"></i>
+									</div>
+									<button type="submit" class="modal__submit is-present">Получить прайс</button>
+								</form>
+							</div>
+						</div>
+						<!--<div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Thanks -->
+	<div class="modal fade" id="thankModal" tabindex="-1" role="dialog" aria-labelledby="thankModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content">
+					<button type="button" class="close modal__close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+
+					</button>
+
+
+					<div class="modal-header">
+
+						<h4 class="modal-title text-left" id="thankModalLabel" style="text-align: center">Спасибо!</h4>
+
+					</div>
+					<div class="modal-body">
+						<div class="modal-description" style="text-align: center;">Ваша заявка отправлена</div>
+						<div class="modal__thanks">
+							<img src="img/thx-icon.png" class="modal__thanks-icon" alt="">
+						</div>
+						<div class="modal-description" style="text-align: center">
+							Долго ждать?<br/>
+							Наберите нас прямо сейчас:<br/>
+							+ 0 (000) 000 00 000
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
